@@ -45,8 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const navClose = document.getElementById('navClose');
+
   navLinks.forEach(link => link.addEventListener('click', closeMenu));
   if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+  if (navClose) navClose.addEventListener('click', closeMenu);
 
   // Close menu on Escape
   document.addEventListener('keydown', (e) => {
