@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maximiliano Ramos — Frontend Developer, QA Manual & Product Owner. Portfolio profesional." />
+  <title>Maximiliano Ramos | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <a href="#inicio" class="navbar__brand" aria-label="Inicio">MR</a>
+
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button
+        class="navbar__hamburger"
+        id="hamburger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="img/video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+
+        <div class="hero__photo-wrap" id="heroPhoto">
+          <div class="hero__photo-glow"></div>
+          <img src="img/maxi.png" alt="Maximiliano Ramos" class="hero__photo" />
+        </div>
+
+        <div class="hero__text">
+          <p class="hero__greeting fade-in">Hola, soy</p>
+          <h1 class="hero__name" id="heroName">
+            <span class="hero__name-line" id="heroLine1">Maximiliano</span>
+            <span class="hero__name-line" id="heroLine2">Ramos</span>
+          </h1>
+          <div class="hero__roles fade-in">
+            <span class="role-prefix">// </span><span id="roleText" class="role-text"></span><span class="role-cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="hero__desc fade-in">
+            Desarrollo interfaces modernas, garantizo la calidad del software y lidero la visión del producto — de la idea al usuario final.
+          </p>
+          <div class="hero__ctas fade-in">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--outline">Contacto</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#proyectos" class="hero__scroll-hint" aria-label="Ir a proyectos">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROYECTOS
+    ══════════════════════════════════════════ -->
+    <section class="section proyectos" id="proyectos">
+      <div class="container">
+
+        <div class="section__header fade-in">
+          <span class="section__tag">Trabajos</span>
+          <h2 class="section__title">Proyectos</h2>
+          <p class="section__subtitle">Una selección de mis trabajos más recientes en desarrollo web.</p>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- Proyecto 1 -->
+          <a href="https://estudioscrollini.netlify.app/" target="_blank" rel="noopener noreferrer" class="card fade-in" aria-label="Ver proyecto Estudio Scrollini">
+            <div class="card__img-wrap">
+              <img src="img/proyecto1.png" alt="Estudio Scrollini" class="card__img" loading="lazy" />
+              <div class="card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Estudio Scrollini</h3>
+              <p class="card__sub">Escribanía Notarial · HTML / CSS / JS</p>
+            </div>
+          </a>
+
+          <!-- Proyecto 2 -->
+          <a href="https://escvictoriagonzalez.netlify.app/" target="_blank" rel="noopener noreferrer" class="card fade-in" aria-label="Ver proyecto Escribana Victoria González">
+            <div class="card__img-wrap">
+              <img src="img/proyecto2.png" alt="Escribana Victoria González" class="card__img" loading="lazy" />
+              <div class="card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Escribana Victoria González</h3>
+              <p class="card__sub">Escribanía Notarial · HTML / CSS / JS</p>
+            </div>
+          </a>
+
+          <!-- Proyecto 3 -->
+          <a href="https://estudionotariadomodelo.netlify.app/" target="_blank" rel="noopener noreferrer" class="card fade-in" aria-label="Ver proyecto Estudio Notariado Modelo">
+            <div class="card__img-wrap">
+              <img src="img/proyecto3.png" alt="Estudio Notariado Modelo" class="card__img" loading="lazy" />
+              <div class="card__overlay" aria-hidden="true">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Estudio Notariado Modelo</h3>
+              <p class="card__sub">Escribanía Notarial · HTML / CSS / JS</p>
+            </div>
+          </a>
+
+          <!-- Placeholders 4–8 -->
+          <div class="card card--placeholder fade-in">
+            <div class="card__img-wrap card__img--empty">
+              <span class="card__loading-text">Cargando...</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Proyecto 4</h3>
+              <p class="card__sub">Próximamente</p>
+            </div>
+          </div>
+
+          <div class="card card--placeholder fade-in">
+            <div class="card__img-wrap card__img--empty">
+              <span class="card__loading-text">Cargando...</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Proyecto 5</h3>
+              <p class="card__sub">Próximamente</p>
+            </div>
+          </div>
+
+          <div class="card card--placeholder fade-in">
+            <div class="card__img-wrap card__img--empty">
+              <span class="card__loading-text">Cargando...</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Proyecto 6</h3>
+              <p class="card__sub">Próximamente</p>
+            </div>
+          </div>
+
+          <div class="card card--placeholder fade-in">
+            <div class="card__img-wrap card__img--empty">
+              <span class="card__loading-text">Cargando...</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Proyecto 7</h3>
+              <p class="card__sub">Próximamente</p>
+            </div>
+          </div>
+
+          <div class="card card--placeholder fade-in">
+            <div class="card__img-wrap card__img--empty">
+              <span class="card__loading-text">Cargando...</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Proyecto 8</h3>
+              <p class="card__sub">Próximamente</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SERVICIOS
+    ══════════════════════════════════════════ -->
+    <section class="section servicios" id="servicios">
+      <div class="container">
+
+        <div class="section__header fade-in">
+          <span class="section__tag">Lo que hago</span>
+          <h2 class="section__title">Servicios</h2>
+          <p class="section__subtitle">Soluciones digitales completas, desde la interfaz hasta la estrategia de producto.</p>
+        </div>
+
+        <div class="servicios__grid">
+
+          <div class="serv-card fade-in">
+            <div class="serv-card__icon">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+            </div>
+            <h3 class="serv-card__title">Frontend Development</h3>
+            <p class="serv-card__desc">
+              Sitios y aplicaciones web modernas, responsivas y de alto rendimiento. Interfaces limpias centradas en la experiencia del usuario.
+            </p>
+            <ul class="serv-card__list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> HTML5 · CSS3 · JS Vanilla</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Diseño responsive & mobile-first</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Animaciones & micro-interacciones</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Optimización de rendimiento</li>
+            </ul>
+          </div>
+
+          <div class="serv-card fade-in">
+            <div class="serv-card__icon">
+              <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+            </div>
+            <h3 class="serv-card__title">QA Manual</h3>
+            <p class="serv-card__desc">
+              Aseguramiento de la calidad del software. Diseño de casos de prueba, ejecución de tests y reporte de defectos para garantizar productos sin errores.
+            </p>
+            <ul class="serv-card__list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Diseño de casos de prueba</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Testing funcional & regresión</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Reporte y seguimiento de bugs</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Pruebas de usabilidad</li>
+            </ul>
+          </div>
+
+          <div class="serv-card fade-in">
+            <div class="serv-card__icon">
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+            </div>
+            <h3 class="serv-card__title">Product Owner</h3>
+            <p class="serv-card__desc">
+              Gestión del backlog, definición de requerimientos y visión del producto. Puente entre el equipo técnico y los stakeholders.
+            </p>
+            <ul class="serv-card__list">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Gestión del backlog</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Definición de user stories</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Roadmap & priorización</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sprint planning & review</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════ -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+
+        <div class="section__header fade-in">
+          <span class="section__tag">Hablemos</span>
+          <h2 class="section__title">Contacto</h2>
+          <p class="section__subtitle">¿Tenés un proyecto en mente? Estoy disponible para nuevas oportunidades.</p>
+        </div>
+
+        <div class="contact__row fade-in">
+
+          <a href="https://www.linkedin.com/in/maximiliano-ramos1997/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn de Maximiliano Ramos">
+            <div class="contact-item__icon">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </div>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://wa.me/59899853433" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="WhatsApp de Maximiliano Ramos">
+            <div class="contact-item__icon">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </div>
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="https://www.instagram.com/maxiramosss/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Instagram de Maximiliano Ramos">
+            <div class="contact-item__icon">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </div>
+            <span>Instagram</span>
+          </a>
+
+          <a href="mailto:maxramos497@gmail.com" class="contact-item" aria-label="Email maxramos497@gmail.com">
+            <div class="contact-item__icon">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </div>
+            <span>Email</span>
+          </a>
+
+          <a href="CV - Maximiliano Ramos.pdf" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Descargar CV de Maximiliano Ramos">
+            <div class="contact-item__icon">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            </div>
+            <span>CV</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo">MR</span>
+        <p class="footer__copy">© 2026 Maximiliano Ramos.<br>Todos los derechos reservados.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fa-solid fa-sun" id="themeIcon" aria-hidden="true"></i>
+        <span id="themeLabel">Light Mode</span>
+      </button>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       WHATSAPP FLOTANTE
+  ══════════════════════════════════════════ -->
+  <a
+    href="https://wa.me/59899853433"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="wa-float"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
