@@ -328,11 +328,13 @@ button {
   background: rgba(0, 0, 0, 0.6);
   z-index: 999;
   opacity: 0;
+  pointer-events: none;
   transition: opacity var(--transition);
 }
 
 .nav-overlay.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -499,6 +501,33 @@ button {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* ── Light mode: hero text always stays light (bg is always dark video) ── */
+[data-theme="light"] .hero__greeting {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .hero__name {
+  color: #ffffff;
+}
+
+[data-theme="light"] .hero__desc {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="light"] .role-text {
+  color: #ffffff;
+}
+
+[data-theme="light"] .btn--outline {
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme="light"] .btn--outline:hover {
+  color: #ffffff;
+  border-color: var(--accent);
 }
 
 /* Scroll hint */
