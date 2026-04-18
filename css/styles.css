@@ -630,6 +630,15 @@ button {
   transform: scale(1.06);
 }
 
+.card__img--contain {
+  object-fit: contain;
+  background-color: var(--bg-card);
+}
+
+.card:hover .card__img--contain {
+  transform: scale(1.03);
+}
+
 /* Hover overlay with icon */
 .card__overlay {
   position: absolute;
